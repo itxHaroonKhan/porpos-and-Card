@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main{
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(5 , 1fr);
+grid-template-rows: repeat(4 , 1fr);
+gap: 5px;
+padding:19px;
+}
+
+.grid-item{
+background-color: aqua;
+}
+
+.header ,.Footer{
+grid-column-start: 1;
+grid-column-end: 6;
+}
+
+.Sidebar{
+  grid-row-start: 2;
+  grid-row-end: 4;
+} 
+
+.contan1{
+  grid-column-start: 2;
+  grid-column-end: 6;
+} 
+
+.Contan2{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.Contan3 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+
